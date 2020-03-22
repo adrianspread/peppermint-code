@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+    margin: 0px;
+    /* zapobiegam przewijaniu strony */
+}
+
+#ticker {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+
+#headlines {
+    position: absolute;
+    left: 0%;
+    white-space: nowrap;
+    color: pink;
+    /* wylaczam zawijanie tekstu na stronie */
+}
+
+#headlines a {
+    padding-right: 40px;
+}
+
+a {
+    margin-left: -4px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    text-decoration: none;
+    display: inline;
+}
+
+#ticker2 {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: black;
+    overflow-x: hidden;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+
+#headlines2 {
+    position: absolute;
+    right: 100%;
+    white-space: nowrap;
+    color: pink;
+    /* wylaczam zawijanie tekstu na stronie */
+}
+
+#headlines2 a {
+    padding-left: 40px;
+}

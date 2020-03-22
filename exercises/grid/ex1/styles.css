@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    /* grid-template-columns: 100px 200px 100px; */
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 50px 1fr 50px;
+    grid-gap: 10px;
+}
+
+header {
+    background-color: lightblue;
+    /* grid-column-start: 1;
+    grid-column-end: -1; */
+    grid-column: 1 / 4;
+}
+
+main {
+    background-color: yellow;
+}
+
+.left-sidebar {
+    background-color: pink;
+}
+
+.right-sidebar {
+    background-color: orangered;
+}
+
+footer {
+    background-color: blue;
+    grid-column: 1 / span 3;
+    /* ile wierszy wezmie */
+}
+
+/* grid-auto-rows sprawia ze elementy wystajace poza siatek zyskuja jakas okreslona wartosc np 200px czyli wysokosc */

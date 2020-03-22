@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.x2 {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.inpopuptwo {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.inpopupthree {
+    font-size: 20px;
+}
+
+.link {
+    font-size: 20px;
+}
+
+.popup {
+    position: static;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+zindex2 {
+    z-index: -1500;
+}
+
+.redesigned {
+    position: fixed;
+    background-color: white;
+    height: 47%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.zindex {
+    z-index: -1;
+}
+
+.move {
+    transition-property: transform;
+    transition-duration: 2s;
+    transform: translateX(-100%);
+}
+
+.side-nav {
+    position: absolute;
+    right: -23%;
+    height: 100%;
+    width: 23%;
+    background-color: white;
+    transition: 2s;
+    z-index: 27;
+}
+
+.inmenu {
+    padding-left: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+a {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.font {
+    font-size: 17px;
+}
+
+.logout {
+    padding-top: 35px;
+    padding-left: 30px;
+}
+
+.x {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: table;
+    padding: 5px;
+    position: relative;
+    background-color: white;
+}
+.sprint {
+    width: 140px;
+    height: 40px;
+}
+.hamburgermenu {
+    width: 80px;
+    height: 40px;
+}
+.tr {
+    display: table-row;
+}
+.td {
+    display: table-cell;
+    width: 50%;
+}
+.right {
+    text-align: right;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    line-height: 0px;
+    position: relative;
+}
+
+.picture {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    position: relative;
+}
+
+.over {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+.welcome {
+    font-size: 45px;
+    color: white;
+    line-height: 35px;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    height: auto;
+    margin-bottom: 30px;
+}
+.started {
+    text-align: center;
+}
+button {
+    border: 2px solid chocolate;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: gold;
+    color: chocolate;
+    width: 190px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.swimimg {
+    margin-bottom: 25px;
+}
+
+.block {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 30px;
+}
+
+p {
+    display: inline-block;
+    font-size: 18px;
+    width: 75%;
+    font-weight: 500;
+}
+
+.undermain {
+    width: 100%;
+    height: 330px;
+    background-color: lightgray;
+    padding-left: 9%;
+    padding-right: 8%;
+    padding-top: 5%;
+}
+
+.footer {
+    width: 100%;
+    background-color: grey;
+    color: gainsboro;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 937px) {
+    .over {
+        top: 160px;
+    }
+
+    .welcome {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .over {
+        top: 160px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    body {
+        min-width: 280px;
+    }
+    .hamburgermenu {
+        width: 70px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .over {
+        top: 160px;
+    }
+
+    .welcome {
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+
+    .undermain {
+        width: 100%;
+        height: 490px;
+        background-color: lightgray;
+        padding-left: 9%;
+        padding-right: 8%;
+        padding-top: 5%;
+    }
+
+    .block {
+        width: 100%;
+        display: block;
+        float: left;
+        margin-bottom: 15px;
+    }
+
+    .swimimg {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .side-nav {
+        position: absolute;
+        height: 100%;
+        right: -50%;
+        width: 50%;
+    }
+
+    .over {
+        top: 160px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .over {
+        top: 140px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .side-nav {
+        position: absolute;
+        height: 100%;
+        right: -50%;
+        width: 50%;
+    }
+
+    .undermain {
+        height: 460px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .undermain {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        min-width: 280px;
+    }
+
+    .over {
+        top: 75px;
+    }
+
+    .welcome {
+        font-size: 27px;
+        line-height: 35px;
+        margin-bottom: 5px;
+    }
+
+    .undermain {
+        width: 100%;
+        height: 500px;
+        background-color: lightgray;
+        padding-left: 9%;
+        padding-right: 8%;
+        padding-top: 5%;
+    }
+
+    .block {
+        display: block;
+        float: left;
+    }
+
+    .img {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .undermain {
+        height: 510px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .undermain {
+        height: 850px;
+    }
+
+    .over {
+        top: 15%;
+    }
+}

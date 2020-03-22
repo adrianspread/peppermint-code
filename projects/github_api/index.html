@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Github API</title>
+</head>
+
+<body>
+    <div class="search">
+        <h1>Github API</h1>
+        <input type="text" name="username" placeholder="username">
+        <input type="password" name="password" placeholder="password">
+        <input type="text" name="user-to-search" placeholder="user to search">
+        <button>submit</button>
+    <div>
+
+    <div class="repos-container"></div>
+
+
+<!-- all my handlebars-->
+    <script id='repos' type='text/x-handlebars-template'>
+
+        {{#data}}
+        <div class="box">
+            <img src={{owner.avatar_url}}>
+            <p class="fullname">{{full_name}}</p>
+            <div class="commits"></div>
+
+        </div>
+        {{/data}}
+
+    </script>
+
+   <script id="reposTwo" type='text/x-handlebars-template'>
+       {{#data}}
+           <ul>
+               <li>{{commit.message}}</li>
+           </ul>
+       {{/data}}
+
+   </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

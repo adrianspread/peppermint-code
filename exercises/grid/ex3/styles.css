@@ -1,0 +1,72 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 100px;
+}
+
+.box1 {
+    display: grid;
+    /* height: 100px;
+    width: 100px; */
+    background-color: grey;
+    border: 1px solid white;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box2 {
+    display: grid;
+    /* height: 100px;
+    width: 100px; */
+    background-color: black;
+    border: 1px solid white;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box3 {
+    display: grid;
+    /* height: 100px;
+    width: 100px; */
+    background-color: blue;
+    border: 1px solid white;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box4 {
+    display: grid;
+    /* height: 100px;
+    width: 100px; */
+    background-color: purple;
+    border: 1px solid white;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.inbox1 {
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    grid-column: 2 / 3;
+}
+
+.inbox2 {
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.inbox3 {
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    grid-row: 2 / 3;
+}
+.inbox4 {
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+    grid-column: 1 /2;
+}

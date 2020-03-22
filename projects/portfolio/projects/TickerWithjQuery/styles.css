@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+    margin: 0px;
+    /* zapobiegam przewijaniu strony */
+}
+
+#ticker {
+    position: relative;
+    width: 100%;
+    border: 3px firebrick solid;
+    overflow-x: hidden;
+    /* zapobiega przewijaniu strony */
+    height: 1.5em;
+}
+
+#headlines {
+    border: 1px solid black;
+    position: absolute;
+    left: 100%;
+    white-space: nowrap;
+    color: pink;
+    /* wylaczam zawijanie tekstu na stronie */
+}
+
+#headlines a {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+a {
+    font-weight: bold;
+    color: blue;
+    border: 3px solid black;
+    margin-right: 0px;
+}

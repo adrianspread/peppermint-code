@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+}
+
+.container {
+    padding: 10px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    /* default */
+    justify-content: center;
+    /*wartosc row reverse wszystko odwraca? */
+    /* only or parent */
+    align-items: center;
+    /* cross axes */
+}
+
+.item {
+    background-color: palevioletred;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* flex-direction: row; --- domyslne ustawienie ukadaja sie wzdluz wierszy*/
+/* flex-direction: column; --- ukladaja sie wzdluz kolumn */
+/* parametry: column reverse, column, row
+
+
+/* justify-content: center  ustawia zawartosc left center flex-end rownanie do prawej*/
+
+/* ustawianie na osi y */
+
+.first {
+    height: 200px;
+    flex-grow: 2;
+    /* wykorzystuje cala dostepna przestrzen pomiedzy obiektami */
+}
+
+/* align-items: center;
+zapobiega rozciaganiu sie elementow dopasowujacych sie do jednego wiekszego
+domyslna wartosc rozciagajaca wszystko to stretch
+flex-start
+flex-end
+przestawi na gore i na dol elementy wzdlegem kontenera */
+
+.third {
+    align-self: flex-end;
+    /* ustawianie niezalezne pojdzie na dol, nadpisuje pozycje zdefiniowana w rodzicu */
+    order: -1;
+    flex-grow: 5;
+    /* bierze 2 razy wiecej dostepnego miejsca wzgledem first */
+    /* rzadko urzywane */
+}
+
+/* order default = 0 */

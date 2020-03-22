@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.box1 {
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    border: 1px solid white;
+}
+
+.box2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.box3 {
+    display: flex;
+    align-items: flex-end;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border: 1px solid white;
+}
+
+.box4 {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    border: 1px solid white;
+}
+
+.inbox1 {
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+}
+
+.inbox2 {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+}
+.inbox3 {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+}
+.inbox4 {
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+}

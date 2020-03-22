@@ -1,0 +1,18 @@
+#over {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+#in {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
